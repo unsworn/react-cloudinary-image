@@ -1,6 +1,6 @@
 {
   "name": "react-cloudinary-image",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CloudinaryImage React component",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/unsworn/react-cloudinary-image",
   "peerDependencies": {
-    "react": "^0.13.2"
+    "react": "@>0.12.0"
   }
 }
