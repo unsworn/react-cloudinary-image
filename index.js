@@ -24,10 +24,9 @@ var CloudinaryImage = React.createClass({
     urlParamsStr = urlParamsStr && urlParamsStr.concat('/');
       
     var url = this.props.urlBase + urlParamsStr + this.props.id;
-    //console.log('url', url)
 
-    //return React.createElement('div', null, 'hello cloudinary'); 
-    return <img src={url} alt="" /> 
+    return React.createElement('img', {url: url, alt: ''}); 
+    //return <img src={url} alt="" /> 
   }
 });
 
