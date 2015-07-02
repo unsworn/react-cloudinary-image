@@ -10,7 +10,6 @@ export default class CloudinaryImage extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     const urlParams = [
       this.props.width && 'w_' + this.props.width,
       this.props.height && 'h_' + this.props.height,
