@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default class CloudinaryImage extends React.Component {
-  propTypes: {
+  static propTypes = {
     urlBase: React.PropTypes.string.isRequired,
     id: React.PropTypes.string.isRequired,
     width: React.PropTypes.oneOfType([
