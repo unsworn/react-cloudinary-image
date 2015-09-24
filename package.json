@@ -1,10 +1,10 @@
 {
   "name": "react-cloudinary-image",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "CloudinaryImage React component",
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel src -d dist --modules common",
+    "build": "babel src -d dist --modules common --stage 0",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -21,8 +21,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "babel": "^5.6.14"
+    "babel": "^5.8.23"
   },
-  "license": "MIT",
-  "author": "Unsworn Industries"
+  "license": "MIT"
 }
