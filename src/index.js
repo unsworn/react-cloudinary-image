@@ -4,8 +4,14 @@ export default class CloudinaryImage extends React.Component {
   propTypes: {
     urlBase: React.PropTypes.string.isRequired,
     id: React.PropTypes.string.isRequired,
-    width: React.PropTypes.number,
-    height: React.PropTypes.number,
+    width: React.PropTypes.oneOfType([
+      React.PropTypes.string,
+      React.PropTypes.number
+    ]),  
+    height: React.PropTypes.oneOfType([
+      React.PropTypes.string,
+      React.PropTypes.number
+    ]), 
     crop: React.PropTypes.string,
     alt: React.PropTypes.string,
     title: React.PropTypes.string
@@ -14,6 +20,8 @@ export default class CloudinaryImage extends React.Component {
   render() {
     // Sanity check
     if (!this.props.id || !this.props.urlBase) return null;
+
+    //const width = parseInt(this.props.width);
 
     const urlParams = [
       this.props.width && 'w_' + this.props.width,
